@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.vaibhav.toggle.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <ToggleButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ToggleButton1"
+        android:id="@+id/tb1"
+        android:textOff="Off"
+        android:textOn="On"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="38dp"
+        android:checked="false" />
+
+    <ToggleButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="toogle1"
+        android:id="@+id/tb2"
+        android:textOff="Off"
+        android:textOn="On"
+        android:layout_alignBottom="@+id/tb1"
+        android:layout_toRightOf="@+id/tb1"
+        android:layout_toEndOf="@+id/tb1"
+        android:layout_marginLeft="59dp"
+        android:layout_marginStart="59dp"
+        android:checked="false" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Change"
+        android:onClick="a"
+        android:id="@+id/button1"
+        android:layout_below="@+id/tb2"
+        android:layout_alignRight="@+id/tb2"
+        android:layout_alignEnd="@+id/tb2"
+        android:layout_marginTop="114dp" />
+</RelativeLayout>
